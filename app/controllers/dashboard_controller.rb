@@ -14,7 +14,7 @@ class DashboardController < ApplicationController
 
         @client = Twilio::REST::Client.new account_sid, auth_token
         message = @client.account.messages.create(:body => "Hi, Please be advised your public sentiment score has
-              dropped below 75%. For Further Information follow the link: www.quickact.com",
+              dropped below 75%. For Further Information https://quickact.herokuapp.com",
             :to => "+16462589816",    # Replace with your phone number
             :from => "+18315402875"
         )
