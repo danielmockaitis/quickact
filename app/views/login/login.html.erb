@@ -1,0 +1,15 @@
+<div class="login">
+
+  <%= form_tag user_login_path, :method => :post do %>
+    <div class="field">
+      Username
+      <input class="input" type="text" placeholder="Username" />
+    </div>
+
+    <div class="field">
+      Password
+      <input class="input" type="password" />
+    </div>
+    <button class="createAccountSubmit" id="submit">Submit</button>
+  <% end %>
+</div>

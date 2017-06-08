@@ -1,0 +1,83 @@
+
+<div class="module">
+  <div class="title">
+    News
+  </div>
+  <div class="amount">
+    <%=@news_articles_size%>
+  </div>
+  <div class=<%=@news_rating_class%>>
+    <%=@news_rating%>
+  </div>
+  <div class="ratings inline">
+    <div class="red">
+      <%=@news_ratings[0]%> <span> Negative</span>
+    </div>
+    <div class="green">
+      <%=@news_ratings[1]%> <span> Positive</span>
+    </div>
+    <div class="nuetral">
+      <%=@news_ratings[2]%> <span> Neutral</span>
+    </div>
+  </div>
+  <div class="media">
+      <%= render "/media/media", :locals => {:media => Medium.news_feed(@time)} %>
+  </div>
+</div>
+
+
+
+<div class="module">
+  <div class="title">
+    Twitter
+  </div>
+  <div class="amount">
+    <%=@twitter_articles_size%>
+  </div>
+  <div class=<%=@twitter_rating_class%>>
+    <%=@twitter_rating%>
+  </div>
+  <div class="ratings inline">
+    <div class="red">
+      <%=@twitter_ratings[0]%> <span> Negative</span>
+    </div>
+    <div class="green">
+      <%=@twitter_ratings[1]%> <span> Positive</span>
+    </div>
+    <div class="nuetral">
+      <%=@twitter_ratings[2]%> <span> Neutral</span>
+    </div>
+  </div>
+
+  <div class="media">
+      <%= render "/media/media", :locals => {:media => Medium.twitter_feed(@time)} %>
+  </div>
+</div>
+
+
+
+<div class="module">
+  <div class="title">
+    Facebook
+  </div>
+  <div class="amount">
+    <%=@facebook_trends_size%>
+  </div>
+  <div class=<%=@facebook_rating_class%>>
+    <%=@facebook_rating%>
+  </div>
+  <div class="ratings inline">
+    <div class="red">
+      <%=@facebook_ratings[0]%> <span> Negative</span>
+    </div>
+    <div class="green">
+      <%=@facebook_ratings[1]%> <span> Positive</span>
+    </div>
+    <div class="nuetral">
+      <%=@facebook_ratings[2]%> <span> Neutral</span>
+    </div>
+  </div>
+  <div class="media">
+      <%= render "/media/media", :locals => {:media => Medium.facebook_feed(@time)} %>
+  </div>
+</div>

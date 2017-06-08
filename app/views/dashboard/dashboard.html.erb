@@ -1,0 +1,21 @@
+<html>
+
+  <body>
+      <div class="mainBody">
+          <div class="headerWrapper">
+            <%= render 'dashboard/dashboard_header' %>
+          </div>
+          <div class="row">
+            <%= render 'dashboard/grading' %>
+          </div>
+          <div class="row">
+            <%= link_to(dashboard_path(:text => 'Yes'), class: "blue-button", method: :post) do -%>
+              Recommendation
+            <% end -%>
+          </div>
+          <div class="row main">
+            <%= render 'dashboard/modules' %>
+          </div>
+       </div>
+  </body>
+</html>

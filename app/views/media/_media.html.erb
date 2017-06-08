@@ -1,0 +1,13 @@
+<%-locals[:media].each do |media|%>
+  <div class="grey-box">
+    <div class="row">
+      <div class="red-dot"></div>
+    </div>
+    <div class="row content">
+      <%= media.content %>
+    </div>
+    <div class="row source">
+      <%= media.source %> <span><%= media.time %></span>
+    </div>
+  </div>
+<%end%>

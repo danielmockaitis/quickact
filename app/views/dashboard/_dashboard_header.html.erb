@@ -1,0 +1,22 @@
+<div class="header">
+    <!-- Section Header-->
+
+    <!-- Section Menu-->
+    <div class="sectionMenuContainer">
+      <div class="element">
+        <%= link_to(dashboard_path(:time => 'Today'), class: @todayclass, method: :post) do -%>
+          Today
+        <% end -%>
+      </div>
+      <div class="element">
+        <%= link_to(dashboard_path(:time => 'Weekly'), class: @weeklyclass, method: :post) do -%>
+          Weekly
+        <% end -%>
+      </div>
+      <div class="element">
+        <%= link_to(dashboard_path(:time => 'All-Time'), class: @allclass, method: :post) do -%>
+          All-Time
+        <% end -%>
+      </div>
+    </div>
+</div>

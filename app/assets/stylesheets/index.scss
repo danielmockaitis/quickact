@@ -1,3 +1,305 @@
-// Place all the styles related to the index controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .media {
+   margin-top: 5%;
+ }
+
+ .grey-box {
+   background-color: #efefef;
+   width: 100%;
+   margin-left: 9px;
+   margin-right: 9px;
+   display: block;
+   max-height: 120px;
+   min-height: 120px;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 1%;
+   margin-top: 5%;
+
+   .row {
+     display: block;
+   }
+   .content {
+     font-size: 14px;
+     padding: 5%;
+   }
+   .source {
+     padding-left: 3%;
+     text-align: left;
+     font-size: 13px;
+     font-weight: bold;
+     padding: 5%;
+     span {
+       font-weight: normal;
+       float: right;
+       padding-right: 3%;
+     }
+   }
+
+   .red-dot {
+     width: 5px;
+     height: 5px;
+     border-radius: 50%;
+     background-color: #e24053;
+   }
+ }
+
+.red {
+  color: #e24053;
+}
+
+.green {
+  color: #4baf50;
+}
+
+.nuetral {
+  color: #7c7c7c;
+}
+
+.module {
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  border-width: thin;
+  border-style: solid;
+  border-color: #e2e2e2;
+  color: #4d4d4d;
+  border-radius: 5px;
+  padding: 1%;
+
+  .title {
+    font-size: 30px;
+    margin-top: 5%;
+    font-weight: bold;
+  }
+
+  .amount {
+    font-size: 18px;
+    color: #7c7c7c;
+    margin-top: 1%;
+  }
+
+  .mini-green-letter {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 30px;
+      padding: 2%;
+      text-align: center;
+      vertical-align: center;
+      width: 50px;
+      height: 40px;
+      color: white;
+      background-color: #4baf50;
+      border-radius: 50%;
+      margin-top: 5%;
+   }
+
+  .mini-red-letter {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 30px;
+      padding: 2%;
+      text-align: center;
+      width: 50px;
+      height: 40px;
+      color: white;
+      background-color: #e24053;
+      border-radius: 50%;
+      margin-top: 5%;
+   }
+
+  .mini-yellow-letter {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 30px;
+      padding: 2%;
+      text-align: center;
+      width: 50px;
+      height: 40px;
+      color: white;
+      background-color: #f7cc43;
+      border-radius: 50%;
+      margin-top: 5%;
+   }
+
+  .inline {
+    display: inline-block;
+  }
+
+  .ratings {
+    width: 150px;
+    margin-left: 15px;
+    vertical-align: top;
+    // height: 30px;
+    margin-top: 5%;
+    display: inline-block;
+    span {
+      float: right;
+    }
+  }
+
+
+}
+
+ .main {
+   margin-top: 2%;
+ }
+
+.right {
+  float: right;
+}
+
+
+.font-14 {
+  font-size: 14px;
+}
+
+.percent {
+  padding-left: 5%;
+  display: inline-block;
+  font-size: 60px;
+  text-align: center;
+}
+
+.green-letter {
+    display: inline-block;
+    font-size: 100px;
+    padding: 2%;
+    text-align: center;
+    vertical-align: center;
+    width: 110px;
+    height: 110px;
+    color: white;
+    background-color: #4baf50;
+    border-radius: 50%;
+ }
+
+.red-letter {
+    display: inline-block;
+    font-size: 100px;
+    padding: 2%;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    color: white;
+    background-color: #e24053;
+    border-radius: 50%;
+ }
+
+.yellow-letter {
+    display: inline-block;
+    font-size: 100px;
+    padding: 2%;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    color: white;
+    background-color: #f7cc43;
+    border-radius: 50%;
+ }
+
+ .row {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+ }
+
+.blue-button {
+    width: 250px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #3071E9;
+    border: 1px solid #3071E9;
+    border-radius: 5px;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+
+
+.headerWrapper {
+  width: 100%;
+}
+
+.time-menu {
+  text-decoration: none !important;
+  color: grey;
+}
+
+.time-menu-filled {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: black;
+}
+
+
+.element {
+  display: inline-block;
+  // border-style: solid;
+  // border-width: thin;
+  // border-color: grey;
+  text-align: center !important;
+}
+
+
+.sectionMenuContainer {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.mid-region {
+   background: white;
+   margin: auto;
+   width: 50%;
+   z-index: 0;
+   position:relative;
+   padding-bottom: 10% !important;
+}
+
+.mainBody {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: #ffffff;
+    margin-top: 45px;
+}
+
+html {
+ font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
+}
+
+.nav-bar {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  width: auto;
+  background-color: #3071E9;
+  height: 10px;
+  padding: 2%;
+}
